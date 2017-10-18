@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="mdl-typography--text-center">
+  <div class="logo-font mitci-slogan">Water</div>
+  <div class="logo-font mitci-sub-slogan">Description</div>
+</div>
+<div class="mitci-more-section">
+  <div class="mitci-section-title mdl-typography--display-1-color-contrast">Projects</div>
+  <div class="mitci-card-container mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--16-col-tablet mdl-cell--16-col-phone mdl-card mdl-shadow--3dp">
+      <div class="mdl-card__media">
+        <img src="/static/images/project1.jpg">
+      </div>
+      <div class="mdl-card__title">
+         <h4 class="mdl-card__title-text">Project 1</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <span class="mdl-typography--font-light mdl-typography--subhead">Description 1</span>
+      </div>
+      <div class="mdl-card__actions">
+         <a class="mitci-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+           Apply now
+           <i class="material-icons">chevron_right</i>
+         </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

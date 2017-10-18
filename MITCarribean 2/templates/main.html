@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="mdl-typography--text-center">
+  <div class="logo-font mitci-slogan">MIT Caribbean Model Initiative</div>
+  <div class="logo-font mitci-sub-slogan">What is this?</div>
+</div>
+<div class="dspacer"></div>
+<div class="logo-font mitci-create-character">
+  <a href=""><img src="/static/images/puerto.jpg" style="height: 300px"></a>
+</div>
+<div class="mitci-screen-section mdl-typography--text-center">
+  <a name="screens"></a>
+  <div class="mdl-typography--display-1-color-contrast">People</div>
+  <div class="spacer"></div>
+  <div class="mitci-screens">
+    {% for i in range(4) %}
+    <div class="mitci-people mitci-screen">
+      <a class="mitci-image-link" href="">
+        <img class="mitci-screen-image" src="/static/images/person.png">
+      </a>
+      <a class="mitci-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Person</a>
+    </div>
+    {% endfor %}
+
+  </div>
+  <div class="spacer"></div>
+  <div class="mitci-screens">
+    {% for i in range(4) %}
+    <div class="mitci-people mitci-screen">
+      <a class="mitci-image-link" href="">
+        <img class="mitci-screen-image" src="/static/images/person.png">
+      </a>
+      <a class="mitci-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Person</a>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+<div class="mitci-customized-section">
+  <div class="android-wear-band">
+  <div class="mitci-customized-section-text">
+    <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Donate</div>
+    <p class="mdl-typography--font-light">
+      Description
+      <br>
+      <a class="mitci-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+        Donation Button
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <div class="spacer"></div>
+    </p>
+  </div>
+  </div>
+
+</div>
+
+<div class="mitci-more-section">
+  <div class="mitci-section-title mdl-typography--display-1-color-contrast">Contact Us</div>
+  <div class="mitci-card-container mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--16-col-tablet mdl-cell--16-col-phone mdl-card mdl-shadow--3dp">
+      <div class="mdl-card__title">
+         <h4 class="mdl-card__title-text">Form</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <span class="mdl-typography--font-light mdl-typography--subhead">
+          <div class="input-field col s6">
+            <input placeholder="" id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="" id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="input-field col s6">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+        </span>
+      </div>
+      <div class="mdl-card__actions">
+         <a class="mitci-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+           Submit
+           <i class="material-icons">chevron_right</i>
+         </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mspacer"></div>
+<div class="logo-font mitci-create-character">
+  <a href=""><img src="/static/images/puerto.jpg" style="height: 300px"></a>
+</div>
+{% endblock %}
